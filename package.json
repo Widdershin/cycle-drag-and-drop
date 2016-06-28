@@ -1,0 +1,37 @@
+{
+  "name": "cycle-drag-and-drop",
+  "version": "1.0.0",
+  "description": "Drag and drop in Cycle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo index.js:bundle.js -- -t babelify | garnish",
+    "bundle": "browserify index.js -o bundle.js -t babelify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raquelxmoss/cycle-drag-and-drop.git"
+  },
+  "author": "Raquel Moss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raquelxmoss/cycle-drag-and-drop/issues"
+  },
+  "homepage": "https://github.com/raquelxmoss/cycle-drag-and-drop",
+  "dependencies": {
+    "@cycle/core": "^7.0.0-rc8",
+    "@cycle/dom": "^10.0.0-rc34",
+    "@cycle/xstream-run": "^3.0.2",
+    "lodash": "^4.13.1",
+    "xstream": "^5.0.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "budo": "^8.3.0",
+    "garnish": "^5.2.0"
+  }
+}
